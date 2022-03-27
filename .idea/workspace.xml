@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62acc871-f605-499d-85ac-fd553939ed18" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +140,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="26vCN0G0ktl6qzzbOOtrl8eGefO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -179,7 +181,7 @@
       <workItem from="1648320170371" duration="1349000" />
       <workItem from="1648379247842" duration="740000" />
       <workItem from="1648380452471" duration="2249000" />
-      <workItem from="1648382813368" duration="2058000" />
+      <workItem from="1648382813368" duration="4774000" />
     </task>
     <task id="LOCAL-00001" summary="1 finished">
       <created>1648296268462</created>
@@ -195,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648380730882</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2 finished">
+      <created>1648386159497</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648386159497</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +224,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1 finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="1 finished" />
+    <MESSAGE value="2 finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 finished" />
   </component>
 </project>
