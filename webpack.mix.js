@@ -17,8 +17,8 @@ mix.styles([
 ], 'public/assets/admin/css/admin.css');
 
 mix.scripts([
-    'resources/assets/admin/plugins/bootstrap/js/bootstrap.bundle.min.js',
     'resources/assets/admin/plugins/jquery/jquery.min.js',
+    'resources/assets/admin/plugins/bootstrap/js/bootstrap.bundle.min.js',
     'resources/assets/admin/js/adminlte.min.js',
     'resources/assets/admin/js/demo.js'
 ], 'public/assets/admin/js/admin.js');

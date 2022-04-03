@@ -7,7 +7,7 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="public/assets/admin/css/admin.css">
+    <link rel="stylesheet" href="{{ asset('public/assets/admin/css/admin.css') }}">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
@@ -174,31 +174,26 @@
                     </li>
                     <li class="nav-item has-treeview">
                         <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <i class="nav-icon fas fa-archive"></i>
                             <p>
-                                Dashboard
+                                Категории
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="../../index.html" class="nav-link">
+                                <a href="{{ route('categories.index') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Dashboard v1</p>
+                                    <p>Cписок категорий</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="../../index2.html" class="nav-link">
+                                <a href="{{ route('categories.create') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>Dashboard v2</p>
+                                    <p>Новая категория</p>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="../../index3.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Dashboard v3</p>
-                                </a>
-                            </li>
+
                         </ul>
                     </li>
                 </ul>
@@ -226,7 +221,17 @@
     <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-<script src="public/assets/admin/js/admin.js"></script>
+<script src="{{ asset('public/assets/admin/js/admin.js') }}"></script>
+<script>
+    $('.nav-sidebar a').each(function (){
+       let location = window.location.protocol + '//' + window.location.host + window.location.pathname;
+       let link = this.href;
+       if (link == location) {
+           $(this).addClass('active');
+           $(this).closest('.has-treeview').addClass('menu-open');
+       }
+    });
+</script>
 
 </body>
 </html>
