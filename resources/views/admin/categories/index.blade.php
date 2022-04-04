@@ -1,7 +1,7 @@
 @extends('admin.layouts.layout')
 
 @section('content')
-    <div class="content-wrapper">
+
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <div class="container-fluid">
@@ -77,6 +77,7 @@
                 <!-- /.card-body -->
                 <div class="card-footer clearfix">
                     {{ $categories->links() }}
+
                 </div>
                 <!-- /.card-footer-->
             </div>
@@ -84,5 +85,5 @@
 
         </section>
         <!-- /.content -->
-    </div>
+
 @endsection
