@@ -39,15 +39,15 @@
                         </div>
                         <div class="form-group">
                             <label for="description">Цитата</label>
-                            <textarea class="form-control" id="description" name="description" rows="5" placeholder="Введите цитату..."></textarea>
+                            <textarea class="form-control @error('description') is-invalid @enderror" id="description" name="description" rows="5" placeholder="Введите цитату..."></textarea>
                         </div>
                         <div class="form-group">
                             <label for="content">Контент</label>
-                            <textarea class="form-control" id="content" name="content" rows="7" placeholder="Введите текст..."></textarea>
+                            <textarea class="form-control @error('content') is-invalid @enderror" id="content" name="content" rows="7" placeholder="Введите текст..."></textarea>
                         </div>
                         <div class="form-group">
                             <label for="category_id">Выберите категорию</label>
-                            <select name="category_id" id="category_id"  class="form-control">
+                            <select name="category_id" id="category_id"  class="form-control @error('category_id') is-invalid @enderror">
                                 <option>Выбрать категорию</option>
                                 @foreach($categories as $k => $v)
                                 <option value="{{ $k }}">{{ $v }}</option>
@@ -68,7 +68,7 @@
                             <label for="thumbnail">Изображение</label>
                             <div class="input-group">
                                 <div class="custom-file">
-                                    <input type="file" name="thumbnail" class="custom-file-input" id="thumbnail">
+                                    <input type="file" name="thumbnail" class="custom-file-input @error('thumbnail') is-invalid @enderror" id="thumbnail">
                                     <label class="custom-file-label" for="thumbnail">Выберите изображение</label>
                                 </div>
                             </div>
