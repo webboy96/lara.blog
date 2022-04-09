@@ -43,7 +43,9 @@
                         </div>
                         <div class="form-group">
                             <label for="content">Контент</label>
-                            <textarea class="form-control @error('content') is-invalid @enderror" id="content" name="content" rows="7" placeholder="Введите текст..."></textarea>
+                            <textarea class="form-control @error('content') is-invalid @enderror" id="content" name="content" rows="7" placeholder="Введите текст...">
+                            </textarea>
+                            <h1>Classic editor</h1>
                         </div>
                         <div class="form-group">
                             <label for="category_id">Выберите категорию</label>
@@ -83,6 +85,7 @@
                 </div>
             </section>
         </section>
+
         <!-- /.content -->
 
 @endsection

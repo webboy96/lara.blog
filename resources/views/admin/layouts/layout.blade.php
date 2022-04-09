@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <style>
+        .ck-editor__editable_inline {
+            min-height: 300px;
+        }
+    </style>
+
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -293,6 +299,8 @@
 </div>
 <!-- ./wrapper -->
 <script src="{{ asset('public/assets/admin/js/admin.js') }}"></script>
+
+
 <script>
     $('.nav-sidebar a').each(function (){
        let location = window.location.protocol + '//' + window.location.host + window.location.pathname;
@@ -303,6 +311,23 @@
        }
     });
 </script>
+
+
+    <script src="{{ asset('public/assets/admin/ckeditor5/build/ckeditor.js') }}"></script>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#content' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#description' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
 
 </body>
 </html>
