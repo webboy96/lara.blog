@@ -316,18 +316,19 @@
     <script src="{{ asset('public/assets/admin/ckeditor5/build/ckeditor.js') }}"></script>
     <script>
         ClassicEditor
-            .create( document.querySelector( '#content' ) )
+            .create( document.querySelector( '#description' ) )
             .catch( error => {
                 console.error( error );
             } );
     </script>
     <script>
         ClassicEditor
-            .create( document.querySelector( '#description' ) )
+            .create( document.querySelector( '#content' ) )
             .catch( error => {
                 console.error( error );
             } );
     </script>
+
 
 </body>
 </html>

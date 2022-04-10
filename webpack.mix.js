@@ -30,3 +30,29 @@ mix.copyDirectory('resources/assets/admin/plugins/fontawesome-free/webfonts', 'p
 mix.copyDirectory('resources/assets/admin/img', 'public/assets/admin/img');
 mix.copy('resources/assets/admin/css/adminlte.min.css.map', 'public/assets/admin/css/adminlte.min.css.map');
 
+/*
+Front
+ */
+mix.styles([
+    'resources/assets/front/css/bootstrap.min.css',
+    'resources/assets/front/css/all.min.css',
+    'resources/assets/front/font/flaticon.css',
+    'resources/assets/front/css/animate.min.css',
+    'resources/assets/front/css/aos.css',
+    'resources/assets/front/css/owl.carousel.min.css',
+    'resources/assets/front/css/jquery.fancybox.min.css',
+    'resources/assets/front/css/style.css',
+    'resources/assets/front/css/responsive.css',
+
+
+], 'public/assets/front/css/style.css');
+
+mix.scripts([
+    'resources/assets/front/js/jquery/jquery-3.5.1.min.js',
+    'resources/assets/front/js/bootstrap/popper.min.js',
+    'resources/assets/front/js/bootstrap/bootstrap.min.js',
+    'resources/assets/front/js/plugins/plugins.min.js',
+    'resources/assets/front/js/active.js',
+
+], 'public/assets/front/js/front.js');
+
