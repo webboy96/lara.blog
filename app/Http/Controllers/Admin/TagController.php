@@ -15,7 +15,7 @@ class TagController extends Controller
      */
     public function index()
     {
-        $tags =Tag::paginate(2);
+        $tags =Tag::paginate(10);
         return view('admin.tags.index', compact('tags'));
     }
 
@@ -85,7 +85,13 @@ class TagController extends Controller
     {
         //$category = Category::find($id);
         //$category->delete();
-        Tag::destroy($id);
+
+        $tag = Tag::find($id);
+        If ($tag->posts->count())
+        {
+            return redirect()->route('tags.index')->with('error', 'Ошибка! У тега есть записи');
+        }
+        $tag->delete();
         return redirect()->route('tags.index')->with('success', 'Тег удален');
 
     }

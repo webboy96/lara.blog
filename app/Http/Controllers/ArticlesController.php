@@ -12,6 +12,6 @@ class ArticlesController extends Controller
     }
     public function show()
     {
-        //return view('posts.index');
+        return view('articles.show');
     }
 }

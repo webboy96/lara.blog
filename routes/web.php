@@ -21,7 +21,7 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', [ArticlesController::class, 'index'])->name('home');
-Route::get('/articles', [ArticlesController::class, 'show'])->name('articles.single');
+Route::get('/article', [ArticlesController::class, 'show'])->name('articles.single');
 
 Route::group(['prefix' => 'admin', 'middleware'=>'admin'], function(){
   Route::get('/', [MainController::class, 'index'])->name('admin.index');
