@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <meta name="author" content="Themeland">
 
     <!-- Title  -->
-    <title>Digimax - SEO & Digital Marketing Agency HTML Template | Blog Single - Left Sidebar</title>
+    <title>@yield('title')</title>
 
     <!-- Favicon  -->
     <link rel="icon" href="assets/front/img/favicon.png">
@@ -21,9 +21,6 @@
 
     <!-- Style css -->
     <link rel="stylesheet" href="{{ asset('public/assets/front/css/style.css') }}">
-
-
-
 </head>
 
 <body class="blog">

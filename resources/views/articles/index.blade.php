@@ -1,139 +1,42 @@
 @extends('layouts.layout')
+@section('title', 'Блог Путешественника :: Главная')
+
 @section('content')
     <div class="col-12 col-lg-9">
         <div class="row">
-            <div class="col-12 col-md-6">
+            @foreach($articles as $article)
+                <div class="col-12 col-md-6">
                 <!-- Single Blog -->
                 <div class="single-blog res-margin">
                     <!-- Blog Thumb -->
                     <div class="blog-thumb">
-                        <a href="#"><img src="assets/front/img/blog/blog-1.jpg" alt=""></a>
+                        <a href="{{ route('articles.single', ['slug' => $article->slug]) }}"><img src="{{ $article->getImage() }}" alt=""></a>
                     </div>
                     <!-- Blog Content -->
                     <div class="blog-content">
                         <!-- Meta Info -->
                         <ul class="meta-info d-flex justify-content-between">
-                            <li>By <a href="#">Anna Sword</a></li>
-                            <li><a href="#">Feb 05, 2019</a></li>
+                            <li>категория: <a href="{{ route('categories.single', ['slug' => $article->category->slug]) }}">{{ $article->category->title }}</a></li>
+                            <li>{{ $article->getPostDate() }}</li>
+                            <li><i class="fa fa-eye"></i> {{ $article->views }}</li>
                         </ul>
                         <!-- Blog Title -->
-                        <h3 class="blog-title my-3"><a href="#">Blog Title Here</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione obcaecati, animi vitae recusandae, praesentium quae.</p>
-                        <a href="#" class="blog-btn mt-3">Read More</a>
+                        <h3 class="blog-title my-3"><a href="{{ route('articles.single', ['slug' => $article->slug]) }}">{{ $article->title }}</a></h3>
+                        <div>
+                            {!! $article->description !!}
+                        </div>
+                        <a href="{{ route('articles.single', ['slug' => $article->slug]) }}" class="blog-btn mt-3">Read More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
-                <!-- Single Blog -->
-                <div class="single-blog res-margin">
-                    <!-- Blog Thumb -->
-                    <div class="blog-thumb">
-                        <a href="#"><img src="assets/front/img/blog/blog-2.jpg" alt=""></a>
-                    </div>
-                    <!-- Blog Content -->
-                    <div class="blog-content">
-                        <!-- Meta Info -->
-                        <ul class="meta-info d-flex justify-content-between">
-                            <li>By <a href="#">Jassica William</a></li>
-                            <li><a href="#">Feb 05, 2019</a></li>
-                        </ul>
-                        <!-- Blog Title -->
-                        <h3 class="blog-title my-3"><a href="#">Blog Title Here</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione obcaecati, animi vitae recusandae, praesentium quae.</p>
-                        <a href="#" class="blog-btn mt-3">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <!-- Single Blog -->
-                <div class="single-blog">
-                    <!-- Blog Thumb -->
-                    <div class="blog-thumb">
-                        <a href="#"><img src="assets/front/img/blog/blog-3.jpg" alt=""></a>
-                    </div>
-                    <!-- Blog Content -->
-                    <div class="blog-content">
-                        <!-- Meta Info -->
-                        <ul class="meta-info d-flex justify-content-between">
-                            <li>By <a href="#">John Doe</a></li>
-                            <li><a href="#">Mar 05, 2019</a></li>
-                        </ul>
-                        <!-- Blog Title -->
-                        <h3 class="blog-title my-3"><a href="#">Blog Title Here</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione obcaecati, animi vitae recusandae, praesentium quae.</p>
-                        <a href="#" class="blog-btn mt-3">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <!-- Single Blog -->
-                <div class="single-blog res-margin">
-                    <!-- Blog Thumb -->
-                    <div class="blog-thumb">
-                        <a href="#"><img src="assets/front/img/blog/blog-4.jpg" alt=""></a>
-                    </div>
-                    <!-- Blog Content -->
-                    <div class="blog-content">
-                        <!-- Meta Info -->
-                        <ul class="meta-info d-flex justify-content-between">
-                            <li>By <a href="#">Anna Sword</a></li>
-                            <li><a href="#">Feb 05, 2019</a></li>
-                        </ul>
-                        <!-- Blog Title -->
-                        <h3 class="blog-title my-3"><a href="#">Blog Title Here</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione obcaecati, animi vitae recusandae, praesentium quae.</p>
-                        <a href="#" class="blog-btn mt-3">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <!-- Single Blog -->
-                <div class="single-blog res-margin">
-                    <!-- Blog Thumb -->
-                    <div class="blog-thumb">
-                        <a href="#"><img src="assets/front/img/blog/blog-5.jpg" alt=""></a>
-                    </div>
-                    <!-- Blog Content -->
-                    <div class="blog-content">
-                        <!-- Meta Info -->
-                        <ul class="meta-info d-flex justify-content-between">
-                            <li>By <a href="#">Jassica William</a></li>
-                            <li><a href="#">Feb 05, 2019</a></li>
-                        </ul>
-                        <!-- Blog Title -->
-                        <h3 class="blog-title my-3"><a href="#">Blog Title Here</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione obcaecati, animi vitae recusandae, praesentium quae.</p>
-                        <a href="#" class="blog-btn mt-3">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <!-- Single Blog -->
-                <div class="single-blog">
-                    <!-- Blog Thumb -->
-                    <div class="blog-thumb">
-                        <a href="#"><img src="assets/front/img/blog/blog-6.jpg" alt=""></a>
-                    </div>
-                    <!-- Blog Content -->
-                    <div class="blog-content">
-                        <!-- Meta Info -->
-                        <ul class="meta-info d-flex justify-content-between">
-                            <li>By <a href="#">John Doe</a></li>
-                            <li><a href="#">Mar 05, 2019</a></li>
-                        </ul>
-                        <!-- Blog Title -->
-                        <h3 class="blog-title my-3"><a href="#">Blog Title Here</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione obcaecati, animi vitae recusandae, praesentium quae.</p>
-                        <a href="#" class="blog-btn mt-3">Read More</a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
         <div class="row">
         <div class="col-12">
             <!-- Pagination -->
-            <ul class="pagination justify-content-center">
-                <li class="disabled px-1">
+            {{--<ul class="pagination justify-content-center">--}}
+                    {{ $articles->links() }}
+{{--                <li class="disabled px-1">
                     <a href="#" aria-label="Previous">
                         <i class="fas fa-arrow-left"></i>
                     </a>
@@ -145,8 +48,8 @@
                     <a href="#" aria-label="Next">
                         <i class="fas fa-arrow-right"></i>
                     </a>
-                </li>
-            </ul>
+                </li>--}}
+            {{--</ul>--}}
         </div>
     </div>
     </div>
