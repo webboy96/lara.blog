@@ -15,7 +15,7 @@
     <title>@yield('title')</title>
 
     <!-- Favicon  -->
-    <link rel="icon" href="assets/front/img/favicon.png">
+    <link rel="icon" href="{{ asset('assets/front/img/favicon.png') }}">
 
     <!-- ***** All CSS Files ***** -->
 

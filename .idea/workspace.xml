@@ -7,14 +7,10 @@
     <list default="true" id="62acc871-f605-499d-85ac-fd553939ed18" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-11/5pbkNLjPj5sxrHdOOsCaYe2ZAXbK993EnBz8TTqw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-11/FEzrSwQ1uVj1qFtshUgTAQE01ja62ADaTNuRcMHY.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-11/NwCEnL5CwCZrnupZDf8KyNPeKUJU1Inl3KbblpBx.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-11/R1cdeiY8RR7DU35QWEXoiqUqofAiqAYVVT9inU9O.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-11/WxTVXa8XukXw1wIFtV0rqiVfAsP7nbxJXNlYMVNY.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/articles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -359,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649677288254</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="17 is finished">
+      <created>1649748327437</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1649748327438</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,6 +398,7 @@
     <MESSAGE value="134 is finished" />
     <MESSAGE value="15 is finished" />
     <MESSAGE value="16 is finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="16 is finished" />
+    <MESSAGE value="17 is finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="17 is finished" />
   </component>
 </project>

@@ -23,6 +23,7 @@ use App\Http\Controllers\UserController;
 Route::get('/', [ArticlesController::class, 'index'])->name('home');
 Route::get('/article/{slug}', [ArticlesController::class, 'show'])->name('articles.single');
 Route::get('/category/{slug}', [CategoryController::class, 'show'])->name('categories.single');
+Route::get('/tag/{slug}', [TagController::class, 'show'])->name('tags.single');
 
 Route::group(['prefix' => 'admin', 'middleware'=>'admin'], function(){
   Route::get('/', [MainController::class, 'index'])->name('admin.index');

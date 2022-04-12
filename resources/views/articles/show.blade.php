@@ -1,20 +1,35 @@
 @extends('layouts.layout')
+@section('title', 'Блог Путешественника :: ' . $articles->title)
 @section('content')
     <div class="col-12 col-lg-9">
         <!-- Single Blog Details -->
         <article class="single-blog-details">
             <!-- Blog Thumb -->
             <div class="blog-thumb">
-                <a href="#"><img src="assets/front/img/blog/blog-1.jpg" alt=""></a>
+                <a href="{{ route('articles.single', ['slug' => $articles->slug]) }}"><img src="{{ $articles->getImage() }}" alt=""></a>
             </div>
             <!-- Blog Content -->
             <div class="blog-content digimax-blog p-3">
                 <!-- Meta Info -->
                 <div class="meta-info d-flex flex-wrap align-items-center py-2">
                     <ul>
-                        <li class="d-inline-block p-2">By <a href="#">Junaid Hasan</a></li>
-                        <li class="d-none d-md-inline-block p-2"><a href="#">05 Feb, 2020</a></li>
-                        <li class="d-inline-block p-2"><a href="#">2 Comments</a></li>
+
+                        <li class="d-none d-md-inline-block p-2"><i class="fa fa-calendar-day"></i> {{ $articles->getPostDate() }}</li>
+                        <li class="d-inline-block p-2">
+                            <a href="{{ route('categories.single', ['slug' => $articles->category->slug]) }}">
+                                <i class="fa fa-hashtag"></i> {{ $articles->category->title }}
+                            </a>
+                        </li>
+                        <li class="d-inline-block p-2"><i class="fa fa-eye"></i> {{ $articles->views }} </li>
+
+                            <li class="d-inline-block p-2">
+                                <i class="fa fa-tag"></i> Теги:
+                                @foreach($articles->tags as $tag)
+                                <a style="font-weight: bold;" href="{{ route('tags.single', ['slug' => $tag->slug]) }}"> {{ $tag->title }}</a>
+                                @endforeach
+                            </li>
+
+
                     </ul>
                     <!-- Blog Share -->
                     <div class="blog-share ml-auto d-none d-sm-block">
@@ -37,15 +52,10 @@
                 </div>
                 <!-- Blog Details -->
                 <div class="blog-details">
-                    <h3 class="blog-title py-3"><a href="#">Blog Content Here</a></h3>
-                    <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique placeat deleniti repellat alias maiores corrupti, commodi rem eum molestiae distinctio vitae perferendis at esse ex quas hic quis debitis quasi aspernatur incidunt, excepturi sapiente ducimus nisi. Ad molestiae, blanditiis ducimus.</p>
-                    <p class="d-block d-sm-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est mollitia, tenetur libero voluptate quisquam consectetur facilis natus molestiae officiis aperiam.</p>
-                    <blockquote class="blockquote px-4 py-3 my-3 ml-4">
-                        <p class="font-italic d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime magnam, molestias omnis quam veritatis consectetur nihil aliquid quo culpa? Ullam molestiae id temporibus nemo inventore, at reiciendis distinctio porro atque!</p>
-                        <p class="font-italic d-block d-sm-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ullam dolor, omnis maiores molestiae ducimus.</p>
-                    </blockquote>
-                    <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique placeat deleniti repellat alias maiores corrupti, commodi rem eum molestiae distinctio vitae perferendis at esse ex quas hic quis debitis quasi aspernatur incidunt, excepturi sapiente ducimus nisi. Ad molestiae, blanditiis ducimus.</p>
-                    <p class="d-block d-sm-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est mollitia, tenetur libero voluptate quisquam consectetur facilis natus molestiae officiis aperiam.</p>
+                    <h3 class="blog-title py-3">{{ $articles->title }}</h3>
+                    <div>
+                        {{ $articles->content }}
+                    </div>
                 </div>
             </div>
             <!-- Blog Comments -->
@@ -54,7 +64,7 @@
                 <div class="admin media py-4">
                     <!-- Admin Thumb -->
                     <div class="admin-thumb avatar-lg">
-                        <img class="rounded-circle" src="assets/front/img/avatar/avatar-1.png" alt="">
+                        <img class="rounded-circle" src="{{ asset('assets/front/img/avatar/avatar-1.png') }}" alt="">
                     </div>
                     <!-- Admin Content -->
                     <div class="admin-content media-body pl-3 pl-sm-4">
@@ -70,7 +80,7 @@
                     <div class="single-comments media p-4">
                         <!-- Comments Thumb -->
                         <div class="comments-thumb avatar-lg">
-                            <img class="rounded-circle" src="assets/front/img/avatar/avatar-2.png" alt="">
+                            <img class="rounded-circle" src="{{ asset('assets/front/img/avatar/avatar-2.png') }}" alt="">
                         </div>
                         <!-- Comments Content -->
                         <div class="comments-content media-body pl-3">
@@ -86,7 +96,7 @@
                     <div class="single-comments media p-4">
                         <!-- Comments Thumb -->
                         <div class="comments-thumb avatar-lg">
-                            <img class="rounded-circle" src="assets/front/img/avatar/avatar-3.png" alt="">
+                            <img class="rounded-circle" src="{{ asset('assets/front/img/avatar/avatar-3.png') }}" alt="">
                         </div>
                         <!-- Comments Content -->
                         <div class="comments-content media-body pl-3">

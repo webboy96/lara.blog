@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Controllers\Controller;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
@@ -14,6 +14,9 @@ class ArticlesController extends Controller
     }
     public function show($slug)
     {
-        return view('articles.show');
+        $articles = Post::where('slug', $slug)->firstOrFail();
+        $articles->views += 1;
+        $articles->update();
+        return view('articles.show', compact('articles'));
     }
 }

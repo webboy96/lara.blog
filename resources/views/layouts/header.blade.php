@@ -4,8 +4,8 @@
         <div class="container header">
             <!-- Navbar Brand-->
             <a class="navbar-brand" href="/">
-                <img class="navbar-brand-regular" src="assets/front/img/logo/logo-white.png" alt="brand-logo">
-                <img class="navbar-brand-sticky" src="assets/front/img/logo/logo.png" alt="sticky brand-logo">
+                <img class="navbar-brand-regular" src="{{ asset('assets/front/img/logo/logo-white.png') }}" alt="brand-logo">
+                <img class="navbar-brand-sticky" src="{{ asset('assets/front/img/logo/logo.png') }}" alt="sticky brand-logo">
             </a>
             <div class="ml-auto"></div>
             <!-- Navbar -->
