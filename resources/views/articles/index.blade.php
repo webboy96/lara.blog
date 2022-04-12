@@ -16,14 +16,14 @@
                     <div class="blog-content">
                         <!-- Meta Info -->
                         <ul class="meta-info d-flex justify-content-between">
-                            <li>категория: <a href="{{ route('categories.single', ['slug' => $article->category->slug]) }}">{{ $article->category->title }}</a></li>
-                            <li>{{ $article->getPostDate() }}</li>
-                            <li><i class="fa fa-eye"></i> {{ $article->views }}</li>
+                            <li><a href="{{ route('categories.single', ['slug' => $article->category->slug]) }}"><i class="fa fa-hashtag"></i> {{ $article->category->title }}</a></li>
+                            <li><i class="fa fa-calendar-day"></i> {{ $article->getPostDate() }}</li>
+                            <li><i class="fa fa-eye"></i> {{ $article->views }} </li>
                         </ul>
                         <!-- Blog Title -->
                         <h3 class="blog-title my-3"><a href="{{ route('articles.single', ['slug' => $article->slug]) }}">{{ $article->title }}</a></h3>
                         <div>
-                            {!! $article->description !!}
+                            {!! $article->cutDescription() !!}
                         </div>
                         <a href="{{ route('articles.single', ['slug' => $article->slug]) }}" class="blog-btn mt-3">Read More</a>
                     </div>

@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class Post extends Model
 {
@@ -53,5 +54,10 @@ class Post extends Model
         }
         public function getPostDate(){
             return Carbon::createFromFormat('Y-m-d H:i:s', $this->created_at)->format('d.m.y');
+        }
+
+        public function cutDescription(){
+
+            return Str::limit($this->description, 150, '...');
         }
 }
