@@ -18,13 +18,10 @@
                 <div class="widget-content">
                     <!-- Category Widget Items -->
                     <ul class="widget-items">
-                        <li><a href="#" class="d-flex py-3"><span>Web Design</span><span class="ml-auto">(14)</span></a></li>
-                        <li><a href="#" class="d-flex py-3"><span>Digital Agency</span><span class="ml-auto">(32)</span></a></li>
-                        <li><a href="#" class="d-flex py-3"><span>Wordpress</span><span class="ml-auto">(27)</span></a></li>
-                        <li><a href="#" class="d-flex py-3"><span>UI Design</span><span class="ml-auto">(18)</span></a></li>
-                        <li><a href="#" class="d-flex py-3"><span>Marketing</span><span class="ml-auto">(15)</span></a></li>
-                        <li><a href="#" class="d-flex py-3"><span>Web Template</span><span class="ml-auto">(29)</span></a></li>
-                    </ul>
+                        @foreach($categoryList as $categoryListItem)
+                            <li><a href="{{ route('categories.single', ['slug' => $categoryListItem->slug]) }}" class="d-flex py-3"><span>{{ $categoryListItem->title }}</span><span class="ml-auto">(14)</span></a></li>
+                        @endforeach
+                        </ul>
                 </div>
             </div>
         </div>
@@ -98,18 +95,10 @@
                 <div class="widget-content">
                     <!-- Tags Widget Items -->
                     <div class="widget-content tags-widget-items pt-2">
-                        <a href="#" class="d-inline-block mt-2 mr-1 px-2 py-1">Digimax</a>
-                        <a href="#" class="d-inline-block mt-2 mr-1 px-2 py-1">Bootstrap</a>
-                        <a href="#" class="d-inline-block mt-2 mr-1 px-2 py-1">Agency</a>
-                        <a href="#" class="d-inline-block mt-2 mr-1 px-2 py-1">Marketing</a>
-                        <a href="#" class="d-inline-block mt-2 mr-1 px-2 py-1">Landing Page</a>
-                        <a href="#" class="d-inline-block mt-2 mr-1 px-2 py-1">Business</a>
-                        <a href="#" class="d-inline-block mt-2 mr-1 px-2 py-1">Fashion</a>
-                        <a href="#" class="d-inline-block mt-2 mr-1 px-2 py-1">Media</a>
-                        <a href="#" class="d-inline-block mt-2 mr-1 px-2 py-1">Lifestyle</a>
-                        <a href="#" class="d-inline-block mt-2 mr-1 px-2 py-1">Wordpress</a>
-                        <a href="#" class="d-inline-block mt-2 mr-1 px-2 py-1">Web Design</a>
-                        <a href="#" class="d-inline-block mt-2 mr-1 px-2 py-1">Mobile App</a>
+                        @foreach($tagList as $tagListItem)
+                        <a href="{{ route('tags.single', ['slug'=>$tagListItem->slug]) }}" class="d-inline-block mt-2 mr-1 px-2 py-1">{{ $tagListItem->title }}</a>
+                        @endforeach
+
                     </div>
                 </div>
             </div>
