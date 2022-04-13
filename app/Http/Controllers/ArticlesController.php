@@ -13,8 +13,10 @@ class ArticlesController extends Controller
     {
         $articles = Post::with('category')->orderBy('id', 'desc')->paginate(4);
         $categoryList = Category::all();
+        //$categoryCount = Category::all->posts()->count();
         $tagList = Tag::all();
-        return view('articles.index', compact('articles', 'categoryList', 'tagList'));
+        $mostViewedPosts = Post::orderBy('views', 'desc')->get();
+        return view('articles.index', compact('articles', 'categoryList', 'tagList','mostViewedPosts'));
     }
     public function show($slug)
     {
@@ -22,6 +24,8 @@ class ArticlesController extends Controller
         $articles->views += 1;
         $articles->update();
         $categoryList = Category::all();
-        return view('articles.show', compact('articles', 'categoryList'));
+        $tagList = Tag::all();
+        $mostViewedPosts = Post::orderBy('views', 'desc')->get();
+        return view('articles.show', compact('articles', 'categoryList', 'tagList','mostViewedPosts'));
     }
 }

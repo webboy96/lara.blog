@@ -10,7 +10,7 @@
             <div class="ml-auto"></div>
             <!-- Navbar -->
             <ul class="navbar-nav items">
-                <li class="nav-item dropdown">
+               {{-- <li class="nav-item dropdown">
                     <a class="nav-link" href="#">Главная <i class="fas fa-angle-down ml-1"></i></a>
                     <ul class="dropdown-menu">
                         <li class="nav-item dropdown">
@@ -36,6 +36,9 @@
                             </ul>
                         </li>
                     </ul>
+                </li>--}}
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Главная</a>
                 </li>
                 <li class="nav-item">
                     <a href="about.html" class="nav-link">Обо мне</a>

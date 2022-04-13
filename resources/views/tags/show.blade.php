@@ -10,10 +10,16 @@
                 <div class="single-blog res-margin">
                     <!-- Blog Content -->
                     <div class="blog-content">
-                        <h3 class="blog-title my-3"> Статьи из катеогрии: {{ $tag->title }}</h3>
+                        <h3 class="blog-title my-3">
+                            @if ($articles->count())
+                                Статьи c тегом: {{ $tag->title }}
+                            @else Нет статей c тегом: {{ $tag->title }}
+                                @endif
+                        </h3>
                     </div>
                 </div>
             </div>
+            @if ($articles->count())
             @foreach($articles as $article)
                 <div class="col-12 col-md-6">
                     <!-- Single Blog -->
@@ -40,6 +46,7 @@
                     </div>
                 </div>
             @endforeach
+                        @endif
         </div>
         <div class="row">
             <div class="col-12">
