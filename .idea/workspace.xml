@@ -4,31 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62acc871-f605-499d-85ac-fd553939ed18" name="Default Changelist" comment="18 is finished with tagController and CategoryController">
+    <list default="true" id="62acc871-f605-499d-85ac-fd553939ed18" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/ckeditor5.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-05/GQriB78TJbKYVOBVgNcr0fbFklVaCGcAplluASvP.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-05/GQriB78TJbKYVOBVgNcr0fbFklVaCGcAplluASvP.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-05/jzL6qx1NDy0nJDAEMrxGUTsGMSPVjphHkyCHXPkh.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-05/jzL6qx1NDy0nJDAEMrxGUTsGMSPVjphHkyCHXPkh.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-06/1mNr4VxhFFfMB6ytcvYcY1XeXPzjNCDcfYDXppXz.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-06/1mNr4VxhFFfMB6ytcvYcY1XeXPzjNCDcfYDXppXz.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-06/UQKXiTLODP7NzSfDPtP7hQ9xv76JA8OqYNX9R5vN.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-06/UQKXiTLODP7NzSfDPtP7hQ9xv76JA8OqYNX9R5vN.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-06/WoAfVj92K8SuF1oM8FnQRnhm9WHDwCBvZcUG6vgq.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-06/WoAfVj92K8SuF1oM8FnQRnhm9WHDwCBvZcUG6vgq.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-06/heQW9lWHKpCtyYIqRWLM1mGa0jnPgRiSORuw7to8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-06/heQW9lWHKpCtyYIqRWLM1mGa0jnPgRiSORuw7to8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-06/nJuMYGEFYMztDJwcZh2rEY6AXSi8qqxbq3YsWUOp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-06/nJuMYGEFYMztDJwcZh2rEY6AXSi8qqxbq3YsWUOp.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-11/ZSFzrEjUEIxdbQeenKiX0krlVshPia5zGZsx1bUi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-11/ZSFzrEjUEIxdbQeenKiX0krlVshPia5zGZsx1bUi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-12/L4kN79QwWaeuPtHdHp79Ir9lGyv1XRR1bf1wck0k.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-12/L4kN79QwWaeuPtHdHp79Ir9lGyv1XRR1bf1wck0k.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-12/NSnIYrUTiFNpZyY3XOLfnrtNhfFDaMGgiVrHaqsj.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-12/NSnIYrUTiFNpZyY3XOLfnrtNhfFDaMGgiVrHaqsj.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-12/bk1gGX2rLpaNZ35QKpWrAa4asgkwJVle7wZKKvkA.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-12/bk1gGX2rLpaNZ35QKpWrAa4asgkwJVle7wZKKvkA.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-12/dS979wXtUfmQvr3N0hPmrw7wmatdTXmNjQPVVLDK.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-12/dS979wXtUfmQvr3N0hPmrw7wmatdTXmNjQPVVLDK.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-12/xiAD6ln6sHeqir93kCs4j4lNmPSSYa53hzNaoXiW.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-12/xiAD6ln6sHeqir93kCs4j4lNmPSSYa53hzNaoXiW.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tags/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tags/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/pagination/bootstrap-4.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/bootstrap-4.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -404,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649855487655</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="18 is finished and i all things did for server, deleted public from path">
+      <created>1649954701903</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1649954701904</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,6 +429,7 @@
     <MESSAGE value="17 is finished" />
     <MESSAGE value="18 is finished" />
     <MESSAGE value="18 is finished with tagController and CategoryController" />
-    <option name="LAST_COMMIT_MESSAGE" value="18 is finished with tagController and CategoryController" />
+    <MESSAGE value="18 is finished and i all things did for server, deleted public from path" />
+    <option name="LAST_COMMIT_MESSAGE" value="18 is finished and i all things did for server, deleted public from path" />
   </component>
 </project>

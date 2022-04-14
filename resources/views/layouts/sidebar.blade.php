@@ -19,7 +19,7 @@
                     <!-- Category Widget Items -->
                     <ul class="widget-items">
                         @foreach($categoryList as $categoryListItem)
-                            <li><a href="{{ route('categories.single', ['slug' => $categoryListItem->slug]) }}" class="d-flex py-3"><span>{{ $categoryListItem->title }}</span><span class="ml-auto">(14)</span></a></li>
+                            <li><a href="{{ route('categories.single', ['slug' => $categoryListItem->slug]) }}" class="d-flex py-3"><span>{{ $categoryListItem->title }}</span><span class="ml-auto">{{ $categoryListItem->posts()->count() }}</span></a></li>
                         @endforeach
                         </ul>
                 </div>

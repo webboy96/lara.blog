@@ -41,6 +41,24 @@
                     <a href="/" class="nav-link">Главная</a>
                 </li>
 
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link">Категории <i class="fas fa-angle-down ml-1"></i></a>
+                    <ul class="dropdown-menu">
+                        @foreach($categoryList as $categoryListItem)
+                        <li class="nav-item"><a href="{{ route('categories.single', ['slug' => $categoryListItem->slug]) }}" class="nav-link">{{ $categoryListItem->title }}</a></li>
+                        @endforeach
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link">Теги<i class="fas fa-angle-down ml-1"></i></a>
+                    <ul class="dropdown-menu">
+                        @foreach($tagList as $tagListItem)
+                            <li class="nav-item"><a href="{{ route('tags.single', ['slug'=>$tagListItem->slug]) }}" class="nav-link">{{ $tagListItem->title }}</a></li>
+                        @endforeach
+                    </ul>
+                </li>
+
                 @if (auth()->check())
                     @if (auth()->user()->is_admin)
                         <li class="nav-item">
@@ -51,6 +69,7 @@
                             <a href="/logout" class="nav-link">Выйти</a>
                         </li>
                     @else
+
                         <li class="nav-item">
                             <a href="/register" class="nav-link">Регистрацияе</a>
                         </li>
