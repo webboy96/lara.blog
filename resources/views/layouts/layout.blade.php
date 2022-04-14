@@ -106,9 +106,10 @@
     <section id="blog" class="section blog-area ptb_100">
         <div class="container">
             <div class="row">
-                        @include('layouts.sidebar')
+                @yield('content')
+                @include('layouts.sidebar')
 
-                        @yield('content')
+
 
 
             </div>

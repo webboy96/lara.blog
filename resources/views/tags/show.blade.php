@@ -3,7 +3,7 @@
 @section('title', 'Блог Путешественника :: Статьи c тегом: ' . $tag->title)
 
 @section('content')
-    <div class="col-12 col-lg-9">
+    <div class="col-12 col-lg-9 mb-5">
         <div class="row">
             <div class="col-12 col-md-12">
                 <!-- Single Blog -->

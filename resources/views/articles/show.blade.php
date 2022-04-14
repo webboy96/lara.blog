@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 @section('title', 'Блог Путешественника :: ' . $articles->title)
 @section('content')
-    <div class="col-12 col-lg-9">
+    <div class="col-12 col-lg-9 mb-5">
         <!-- Single Blog Details -->
         <article class="single-blog-details">
             <!-- Blog Thumb -->
