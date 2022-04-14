@@ -8,7 +8,7 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="{{ asset('public/assets/admin/css/admin.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/css/admin.css') }}">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
@@ -94,7 +94,7 @@
 </div>
 <!-- /.register-box -->
 
-<script src="{{ asset('public/assets/admin/js/admin.js') }}"></script>
+<script src="{{ asset('assets/admin/js/admin.js') }}"></script>
 
 </body>
 </html>

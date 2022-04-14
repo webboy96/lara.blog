@@ -5,7 +5,7 @@
             <!-- Search Widget -->
             <div class="widget-content search-widget">
                 <form action="#">
-                    <input type="text" placeholder="Enter your keywords">
+                    <input type="text" placeholder="Введите текст для поиска">
                 </form>
             </div>
         </div>
@@ -13,7 +13,7 @@
         <div class="single-widget">
             <!-- Category Widget -->
             <div class="widget catagory-widget">
-                <h5 class="text-uppercase d-block py-3">Categories</h5>
+                <h5 class="text-uppercase d-block py-3">Категории</h5>
                 <!-- Category Widget Content -->
                 <div class="widget-content">
                     <!-- Category Widget Items -->

@@ -20,7 +20,7 @@
     <!-- ***** All CSS Files ***** -->
 
     <!-- Style css -->
-    <link rel="stylesheet" href="{{ asset('public/assets/front/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/front/css/style.css') }}">
 </head>
 
 <body class="blog">
@@ -175,7 +175,7 @@
 <!-- ***** All jQuery Plugins ***** -->
 
 <!-- jQuery(necessary for all JavaScript plugins) -->
-<script src="{{ asset('public/assets/front/js/front.js') }}"></script>
+<script src="{{ asset('assets/front/js/front.js') }}"></script>
 
 </body>
 

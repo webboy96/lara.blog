@@ -7,7 +7,7 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="{{ asset('public/assets/admin/css/admin.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/css/admin.css') }}">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
@@ -303,7 +303,7 @@
     <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-<script src="{{ asset('public/assets/admin/js/admin.js') }}"></script>
+<script src="{{ asset('assets/admin/js/admin.js') }}"></script>
 
 
 <script>
@@ -318,7 +318,7 @@
 </script>
 
 
-    <script src="{{ asset('public/assets/admin/ckeditor5/build/ckeditor.js') }}"></script>
+    <script src="{{ asset('assets/admin/ckeditor5/build/ckeditor.js') }}"></script>
     <script>
         ClassicEditor
             .create( document.querySelector( '#description' ) )
