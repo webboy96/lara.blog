@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62acc871-f605-499d-85ac-fd553939ed18" name="Default Changelist" comment="21 is finished">
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/search.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/search/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="62acc871-f605-499d-85ac-fd553939ed18" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -415,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650015476845</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="21 is finished search from header fixed">
+      <created>1650021225875</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1650021225875</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,6 +456,7 @@
     <MESSAGE value="18 is finished and i all things did for server, deleted public from path" />
     <MESSAGE value="18 is finished add margin bottom for content block and changed did right sidebar" />
     <MESSAGE value="21 is finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="21 is finished" />
+    <MESSAGE value="21 is finished search from header fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="21 is finished search from header fixed" />
   </component>
 </project>
