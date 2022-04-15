@@ -56,7 +56,7 @@
         <div class="single-widget">
             <!-- Tags Widget -->
             <div class="widget tags-widget">
-                <h5 class="text-uppercase d-block py-3">Popular Tags</h5>
+                <h5 class="text-uppercase d-block py-3">Теги</h5>
                 <!-- Tags Widget Content -->
                 <div class="widget-content">
                     <!-- Tags Widget Items -->

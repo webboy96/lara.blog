@@ -25,7 +25,7 @@
                         <div>
                             {!! $article->cutDescription() !!}
                         </div>
-                        <a href="{{ route('articles.single', ['slug' => $article->slug]) }}" class="blog-btn mt-3">Read More</a>
+                        <a href="{{ route('articles.single', ['slug' => $article->slug]) }}" class="blog-btn mt-3">Читать далее</a>
                     </div>
                 </div>
             </div>

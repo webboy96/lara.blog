@@ -7,13 +7,11 @@
                     <!-- Footer Items -->
                     <div class="footer-items">
                         <!-- Footer Title -->
-                        <h3 class="footer-title text-white text-uppercase mb-2">About Us</h3>
+                        <h3 class="footer-title text-white text-uppercase mb-2">Об авторе</h3>
                         <ul>
-                            <li class="py-2"><a class="text-white-50" href="#">Company Profile</a></li>
-                            <li class="py-2"><a class="text-white-50" href="#">Testimonials</a></li>
-                            <li class="py-2"><a class="text-white-50" href="#">Careers</a></li>
-                            <li class="py-2"><a class="text-white-50" href="#">Partners</a></li>
-                            <li class="py-2"><a class="text-white-50" href="#">Affiliate Program</a></li>
+                            <li class="py-2"><a class="text-white-50" href="#">История блога</a></li>
+                            <li class="py-2"><a class="text-white-50" href="#">Упоминания</a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -21,13 +19,11 @@
                     <!-- Footer Items -->
                     <div class="footer-items">
                         <!-- Footer Title -->
-                        <h3 class="footer-title text-white text-uppercase mb-2">Services</h3>
+                        <h3 class="footer-title text-white text-uppercase mb-2">Категории</h3>
                         <ul>
-                            <li class="py-2"><a class="text-white-50" href="#">Web Application</a></li>
-                            <li class="py-2"><a class="text-white-50" href="#">Product Management</a></li>
-                            <li class="py-2"><a class="text-white-50" href="#">User Interaction Design</a></li>
-                            <li class="py-2"><a class="text-white-50" href="#">UX Consultant</a></li>
-                            <li class="py-2"><a class="text-white-50" href="#">Social Media Marketing</a></li>
+                            @foreach($categoryList as $categoryListItem)
+                                <li class="py-2"><a class="text-white-50" href="{{ route('categories.single', ['slug' => $categoryListItem->slug]) }}">{{ $categoryListItem->title }}</a></li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -35,13 +31,13 @@
                     <!-- Footer Items -->
                     <div class="footer-items">
                         <!-- Footer Title -->
-                        <h3 class="footer-title text-white text-uppercase mb-2">Support</h3>
+                        <h3 class="footer-title text-white text-uppercase mb-2">Разделы</h3>
                         <ul>
-                            <li class="py-2"><a class="text-white-50" href="#">Frequently Asked</a></li>
-                            <li class="py-2"><a class="text-white-50" href="#">Terms &amp; Conditions</a></li>
-                            <li class="py-2"><a class="text-white-50" href="#">Privacy Policy</a></li>
-                            <li class="py-2"><a class="text-white-50" href="#">Help Center</a></li>
-                            <li class="py-2"><a class="text-white-50" href="#">Contact Us</a></li>
+                            <li class="py-2"><a class="text-white-50" href="/">Главная</a></li>
+                            <li class="py-2"><a class="text-white-50" href="#">Политика конфиденциальности</a></li>
+                            <li class="py-2"><a class="text-white-50" href="#">Помощь</a></li>
+                            <li class="py-2"><a class="text-white-50" href="#">Контакты</a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -49,8 +45,7 @@
                     <!-- Footer Items -->
                     <div class="footer-items">
                         <!-- Footer Title -->
-                        <h3 class="footer-title text-white text-uppercase mb-2">Follow Us</h3>
-                        <p class="text-white-50 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quae.</p>
+                        <h3 class="footer-title text-white text-uppercase mb-2">Подпишитесь на меня</h3>
                         <!-- Social Icons -->
                         <ul class="social-icons list-inline pt-2">
                             <li class="list-inline-item px-1"><a href="#"><i class="fab fa-facebook"></i></a></li>
@@ -72,9 +67,9 @@
                     <!-- Copyright Area -->
                     <div class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4">
                         <!-- Copyright Left -->
-                        <div class="copyright-left text-white-50">&copy; Copyrights 2020 Digimax All rights reserved.</div>
+                        <div class="copyright-left text-white-50">&copy; Блог Путешественника 2022 Все права защищены</div>
                         <!-- Copyright Right -->
-                        <div class="copyright-right text-white-50">Made with <i class="fas fa-heart"></i> By <a href="#">Themeland</a></div>
+                        <div class="copyright-right text-white-50">Made with <i class="fas fa-heart"></i> By <a href="#">Rinat</a></div>
                     </div>
                 </div>
             </div>

@@ -71,7 +71,7 @@
                     @else
 
                         <li class="nav-item">
-                            <a href="/register" class="nav-link">Регистрацияе</a>
+                            <a href="/register" class="nav-link">Регистрация</a>
                         </li>
                         <li class="nav-item">
                             <a href="/login" class="nav-link">Войти</a>
