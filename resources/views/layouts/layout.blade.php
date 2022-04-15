@@ -24,6 +24,10 @@
 </head>
 
 <body class="blog">
+@php
+$a = intval('123foo');
+echo $a;
+@endphp
 <!--====== Preloader Area Start ======-->
 {{--<div id="preloader">
     <!-- Digimax Preloader -->
