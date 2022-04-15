@@ -25,7 +25,7 @@ class ArticlesController extends Controller
         $articles->update();
         $categoryList = Category::all();
         $tagList = Tag::all();
-        $mostViewedPosts = Post::orderBy('views', 'desc')->get();
+        $mostViewedPosts = Post::orderBy('views', 'desc')->limit(3)->get();
         return view('articles.show', compact('articles', 'categoryList', 'tagList','mostViewedPosts'));
     }
 }

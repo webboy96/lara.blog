@@ -41,7 +41,7 @@
                                 <div class="post-thumb avatar-lg h-100">
                                     <img class="align-self-center" src="{{ $mostViewedPost->getImage() }}" alt="">
                                 </div>
-                                <div class="post-content media-body ml-3 py-2">
+                                <div class="post-content media-body ml-3">
                                     <p class="post-date mb-2">{{ $mostViewedPost->getPostDate() }}</p>
                                     <h6>{{ $mostViewedPost->title }}</h6>
                                 </div>

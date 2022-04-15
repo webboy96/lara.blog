@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62acc871-f605-499d-85ac-fd553939ed18" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/front/img/avatar/avatar-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/front/img/avatar/avatar-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/comments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/comments.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/front/img/bg/blog_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/front/img/bg/blog_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-12/L4kN79QwWaeuPtHdHp79Ir9lGyv1XRR1bf1wck0k.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-12/L4kN79QwWaeuPtHdHp79Ir9lGyv1XRR1bf1wck0k.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-12/NSnIYrUTiFNpZyY3XOLfnrtNhfFDaMGgiVrHaqsj.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-12/NSnIYrUTiFNpZyY3XOLfnrtNhfFDaMGgiVrHaqsj.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-12/bk1gGX2rLpaNZ35QKpWrAa4asgkwJVle7wZKKvkA.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-12/bk1gGX2rLpaNZ35QKpWrAa4asgkwJVle7wZKKvkA.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-12/dS979wXtUfmQvr3N0hPmrw7wmatdTXmNjQPVVLDK.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-12/dS979wXtUfmQvr3N0hPmrw7wmatdTXmNjQPVVLDK.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/images/2022-04-12/xiAD6ln6sHeqir93kCs4j4lNmPSSYa53hzNaoXiW.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/images/2022-04-12/xiAD6ln6sHeqir93kCs4j4lNmPSSYa53hzNaoXiW.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -440,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650047155686</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="21 is finished search from header fixed">
+      <created>1650049659441</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1650049659441</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
