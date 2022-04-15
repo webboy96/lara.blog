@@ -68,8 +68,8 @@
                     </div>
                     <!-- Admin Content -->
                     <div class="admin-content media-body pl-3 pl-sm-4">
-                        <h4 class="admin-name mb-2"><a href="#">Junaid Hasan</a></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo eius nam facere enim, voluptas incidunt officiis molestiae, nostrum dolor? Fugit.</p>
+                        <h4 class="admin-name mb-2"><a href="#">Ринат Хабибуллин</a></h4>
+                        <p>Автор множества статей о путешесвтиях, миллиардер, филантроп.</p>
                     </div>
                 </div>
                 <!-- Comments -->

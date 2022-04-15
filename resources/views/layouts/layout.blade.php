@@ -126,25 +126,25 @@
         <div class="modal-dialog dialog-animated">
             <div class="modal-content h-100">
                 <div class="modal-header" data-dismiss="modal">
-                    Search <i class="far fa-times-circle icon-close"></i>
+                    Поиск <i class="far fa-times-circle icon-close"></i>
                 </div>
                 <div class="modal-body">
-                    <form class="row">
+                    <form class="row" action="{{ route('search') }}" method="get">
                         <div class="col-12 align-self-center">
                             <div class="row">
                                 <div class="col-12 pb-3">
-                                    <h2 class="search-title mb-3">What are you looking for?</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam lacus, dapibus sed imperdiet consectetur.</p>
+                                    <h2 class="search-title mb-3">Что вы ищите?</h2>
+                                    <p>Впишите в поле поиска слово или фразу.</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12 input-group">
-                                    <input type="text" class="form-control" placeholder="Enter your keywords">
+                                    <input type="text" name="s" class="form-control" placeholder="Введите текст для поиска">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12 input-group align-self-center">
-                                    <button class="btn btn-bordered mt-3">Search</button>
+                                    <button class="btn btn-bordered mt-3">Поиск</button>
                                 </div>
                             </div>
                         </div>

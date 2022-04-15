@@ -4,8 +4,8 @@
         <div class="single-widget">
             <!-- Search Widget -->
             <div class="widget-content search-widget">
-                <form action="#">
-                    <input type="text" placeholder="Введите текст для поиска">
+                <form action="{{ route('search') }}" method="get">
+                    <input type="text" name="s"  placeholder="Введите текст для поиска">
                 </form>
             </div>
         </div>
