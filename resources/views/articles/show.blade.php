@@ -54,7 +54,7 @@
                 <div class="blog-details">
                     <h3 class="blog-title py-3">{{ $articles->title }}</h3>
                     <div>
-                        {{ $articles->content }}
+                        {!! $articles->content !!}
                     </div>
                 </div>
             </div>

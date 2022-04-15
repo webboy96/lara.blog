@@ -19,7 +19,7 @@
         <div class="single-comments media p-4">
             <!-- Comments Thumb -->
             <div class="comments-thumb avatar-lg">
-                <img class="rounded-circle" src="{{ asset('assets/front/img/avatar/avatar-2.png') }}" alt="">
+                <img class="rounded-circle" src="{{ asset('assets/front/img/avatar/avatar-1.png') }}" alt="">
             </div>
             <!-- Comments Content -->
             <div class="comments-content media-body pl-3">
@@ -35,7 +35,7 @@
         <div class="single-comments media p-4">
             <!-- Comments Thumb -->
             <div class="comments-thumb avatar-lg">
-                <img class="rounded-circle" src="{{ asset('assets/front/img/avatar/avatar-3.png') }}" alt="">
+                <img class="rounded-circle" src="{{ asset('assets/front/img/avatar/avatar-1.png') }}" alt="">
             </div>
             <!-- Comments Content -->
             <div class="comments-content media-body pl-3">
