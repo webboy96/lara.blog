@@ -13,11 +13,14 @@
 <p> Расположен на VPS с OS Ubuntu 20.04</p>
 
 ## Пользовательская часть
-Использовался шаблон (https://themeforest.net/item/digimax-seo-digital-marketing-agency-html-template/28154934)[Digimax. Made with  By Themeland]
+<p>Использовался шаблон Digimax. Made with  By Themeland</p>
+ - [Смотреть](https://themeforest.net/item/digimax-seo-digital-marketing-agency-html-template/28154934)
 <p>Реализованы функции  регистрации, аутентификации, вывода статей, вывода статей по категориям, тегам, самые просматриваемые, вывода категорий и тегов.</p>
 
 ## Админский вид
-Для админки использовался шаблон [AdminLTE 3](https://adminlte.io/) и редактор статей [CKeditor 5](https://ckeditor.com/)
+<p>Для админки использовался шаблон AdminLTE 3 и для редактирования статей "прикручен" пакет CKeditor 5</p>
+ - [AdminLTE 3](https://adminlte.io/)
+ - [CKeditor 5](https://ckeditor.com/)
 <p>Реализованы функции добавления, редактирования, удаления статей, категорий, тегов, изображения для постов</p>
 
-- [Здесь можнон посмотреть демонстрацию работы](http://768881-ca69073.tmweb.ru/).</p>
+- [Здесь можнон посмотреть демонстрацию работы блога](http://768881-ca69073.tmweb.ru/).</p>
