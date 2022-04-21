@@ -13,7 +13,7 @@ class TagUserController extends Controller
     {
         $tag = Tag::where('slug', $slug)->firstOrFail();
         $articles = $tag->posts()->orderBy('id', 'desc')->paginate(2);
-        $mostViewedPosts = Post::orderBy('views', 'desc')->get();
+        $mostViewedPosts = Post::orderBy('views', 'desc')->limit(3)->get();
         $categoryList = Category::all();
         $tagList = Tag::all();
         return view('tags.show', compact('articles', 'tag', 'categoryList', 'tagList', 'mostViewedPosts'));

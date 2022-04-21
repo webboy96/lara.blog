@@ -13,7 +13,7 @@ class CategoryUserController extends Controller
     {
         $category = Category::where('slug', $slug)->firstOrFail();
         $articles = $category->posts()->orderBy('id', 'desc')->paginate(2);
-        $mostViewedPosts = Post::orderBy('views', 'desc')->get();
+        $mostViewedPosts = Post::orderBy('views', 'desc')->limit(3)->get();
         $categoryList = Category::all();
         $tagList = Tag::all();
         return view('categories.show', compact('articles', 'category', 'categoryList', 'tagList','mostViewedPosts'));

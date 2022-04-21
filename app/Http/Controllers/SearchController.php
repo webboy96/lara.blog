@@ -18,7 +18,7 @@ class SearchController extends Controller
         $articles = Post::where('title', 'LIKE', "%{$s}%")->paginate(2);
         $categoryList = Category::all();
         $tagList = Tag::all();
-        $mostViewedPosts = Post::orderBy('views', 'desc')->get();
+        $mostViewedPosts = Post::orderBy('views', 'desc')->limit(3)->get();
         return view('search.show', compact('articles','s', 'categoryList', 'tagList', 'mostViewedPosts' ));
     }
 }

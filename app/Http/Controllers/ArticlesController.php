@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Models\Post;
 use App\Models\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 
 class ArticlesController extends Controller
 {
@@ -26,6 +27,8 @@ class ArticlesController extends Controller
         $categoryList = Category::all();
         $tagList = Tag::all();
         $mostViewedPosts = Post::orderBy('views', 'desc')->limit(3)->get();
+
         return view('articles.show', compact('articles', 'categoryList', 'tagList','mostViewedPosts'));
     }
+
 }
