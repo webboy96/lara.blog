@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use App\Models\Comment;
 use App\Models\Post;
 use App\Models\Tag;
 use Illuminate\Http\Request;
@@ -27,8 +28,10 @@ class ArticlesController extends Controller
         $categoryList = Category::all();
         $tagList = Tag::all();
         $mostViewedPosts = Post::orderBy('views', 'desc')->limit(3)->get();
+        $comments = Comment::where('post_id', $articles->id)->get();
 
-        return view('articles.show', compact('articles', 'categoryList', 'tagList','mostViewedPosts'));
+
+        return view('articles.show', compact('articles', 'categoryList', 'tagList','mostViewedPosts', 'comments'));
     }
 
 }
