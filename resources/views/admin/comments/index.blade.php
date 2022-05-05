@@ -35,7 +35,33 @@
                 </div>
             </div>
             <div class="card-body">
-                <a href="{{ route('comments.create') }}" class="btn btn-primary mb-3">Добавить комментарий</a>
+                <form role="form"">
+                    @csrf
+                    <div class="card-body">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="content">Комментарий</label>
+                                <textarea class="form-control @error('content') is-invalid @enderror" id="content-comment"  name="content" rows="3" placeholder="Введите текст..."></textarea>
+                                <span id="titleError" class="alert-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="post_id">Выберите статью</label>
+                                <select name="post_id" id="post_id"  class="form-control @error('post_id') is-invalid @enderror">
+                                    <option>Выберите статью</option>
+                                    @foreach(\App\Models\Post::all() as $post)
+                                        <option value="{{ $post->id }}">{{ $post->title }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+
+                            <input type="text" hidden name="user_id" id="user_id" value="{{ Auth::id() }}">
+                        </div>
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary" onclick="createPost()">Сохранить</button>
+                        </div>
+                    </div>
+                </form>
+{{--                <a href="{{ route('comments.create') }}" class="btn btn-primary mb-3">Добавить комментарий</a>--}}
                 @if ($comments->count())
                     <div class="table-responsive">
                         <table class="table table-bordered table-hover texte-nowrap">
@@ -87,4 +113,44 @@
     </section>
     <!-- /.content -->
 
+    <script>
+
+        function createPost() {
+            var user_id = $('#user_id').val();
+            var content = $('#content-comment').val();
+            var post_id = $('#post_id').val();
+
+            let _url     = `/comments.store`;
+            let _token   = $('meta[name="csrf-token"]').attr('content');
+
+            $.ajax({
+                url: _url,
+                type: "POST",
+                data: {
+                    user_id: user_id,
+                    content: content,
+                    post_id: post_id,
+                    _token: _token
+                },
+                success: function(response) {
+                    if(response.code == 200) {
+                        if(id != ""){
+                            $("#row_"+id+" td:nth-child(2)").html(response.data.title);
+                            $("#row_"+id+" td:nth-child(3)").html(response.data.description);
+                        } else {
+                            $('table tbody').prepend('<tr id="row_'+response.data.id+'"><td>'+response.data.id+'</td><td>'+response.data.title+'</td><td>'+response.data.description+'</td><td><a href="javascript:void(0)" data-id="'+response.data.id+'" onclick="editPost(event.target)" class="btn btn-info">Edit</a></td><td><a href="javascript:void(0)" data-id="'+response.data.id+'" class="btn btn-danger" onclick="deletePost(event.target)">Delete</a></td></tr>');
+                        }
+                        $('#title').val('');
+                        $('#description').val('');
+
+                        $('#post-modal').modal('hide');
+                    }
+                },
+                error: function(response) {
+                    $('#titleError').text(response.responseJSON.errors.title);
+                    $('#descriptionError').text(response.responseJSON.errors.description);
+                }
+            });
+        }
+    </script>
 @endsection
