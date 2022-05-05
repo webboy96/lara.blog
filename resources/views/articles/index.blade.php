@@ -1,6 +1,8 @@
 @extends('layouts.layout')
 @section('title', 'Блог Путешественника :: Главная')
+@php
 
+@endphp
 @section('content')
     <div class="col-12 col-lg-9 mb-5">
         <div class="row">
